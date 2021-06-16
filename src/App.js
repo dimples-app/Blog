@@ -9,11 +9,40 @@ import Write from "./pages/Write";
 import Settings from "./pages/Settings";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
 
 function App() {
   return <>
     <Topbar />
-    <Register />
+    <Router>
+      <Switch>
+        <Route exact={true} path="/">
+          <Home />
+        </Route>
+
+        <Route path="/register">
+          <Register />
+        </Route>
+
+        <Route path="/login">
+          <Login />
+        </Route>
+
+        <Route path="/write">
+          <Write />
+        </Route>
+
+        <Route path="/settings">
+          <Settings />
+        </Route>
+
+        <Route path="/post/:postId">
+          <SinglePage />
+        </Route>
+
+      </Switch>
+    </Router>
 
   </>;
 }

@@ -103,7 +103,7 @@
 .settingsTitleUpdate {
   font-size: 30px;
   margin-bottom: 20px;
-  color: lightcoral;
+  color: teal;
 }
 
 .settingsTitleDelete {
@@ -142,7 +142,7 @@
   border-radius: 50%;
   margin-left: 10px;
   color: white;
-  background-color: lightcoral;
+  background-color: coral;
   cursor: pointer;
 }
 
