@@ -13,6 +13,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 
 function App() {
+  const user = true;
   return <>
     <Topbar />
     <Router>
@@ -22,19 +23,19 @@ function App() {
         </Route>
 
         <Route path="/register">
-          <Register />
+          {user ? <Home /> : <Register />}
         </Route>
 
         <Route path="/login">
-          <Login />
+          {user ? <Home /> : <Login />}
         </Route>
 
         <Route path="/write">
-          <Write />
+          {user ? <Write /> : <Register /> }
         </Route>
 
         <Route path="/settings">
-          <Settings />
+          {user ? <Settings /> : <Register />}
         </Route>
 
         <Route path="/post/:postId">
