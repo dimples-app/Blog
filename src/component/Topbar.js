@@ -1,7 +1,5 @@
 import React from 'react'
 
-
-
 function Topbar() {
     return (
         <div className="top">
@@ -26,6 +24,9 @@ function Topbar() {
                         </li>
                         <li className="topListItem">
                             Write
+                        </li>
+                        <li className="topListItem">
+                            Logout
                         </li>
                 </ul>
             </div>
