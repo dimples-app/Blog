@@ -98,3 +98,19 @@
   margin-top: 80px;
   object-fit: cover;
 }
+
+/** --- Home  --------- */
+.home {
+  display: flex;
+}
+
+/** --- Posts  --------- */
+.posts {
+  flex: 9;
+}
+
+/** --- sidebar  --------- */
+.sidebar {
+  flex: 3;
+
+}
