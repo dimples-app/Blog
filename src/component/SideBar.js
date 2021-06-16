@@ -7,7 +7,7 @@ function SideBar() {
                 <span className="sidebarTitle">About me </span>
 
                 <img
-                    src="https://themegoods-cdn-pzbycso8wng.stackpathdns.com/grandblog/demo/wp-content/uploads/2015/11/aboutme.jpg"
+                    src="https://images.pexels.com/photos/312839/pexels-photo-312839.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
                     alt=""
                 />
                 <p>
