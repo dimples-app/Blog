@@ -13,10 +13,11 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 
 function App() {
-  const user = true;
+  const user = false;
   return <>
-    <Topbar />
+    
     <Router>
+    <Topbar />
       <Switch>
         <Route exact={true} path="/">
           <Home />

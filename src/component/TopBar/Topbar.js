@@ -1,7 +1,11 @@
-import React from 'react'
-import "./Topbar.css"
+import React from 'react';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+
+import "./Topbar.css";
+
 
 function Topbar() {
+    const user = false;
     return (
         <div className="top">
             <div className="topRight"> 
@@ -15,31 +19,58 @@ function Topbar() {
                     <ul className="topList">
                         
                         <li className="topListItem">
-                            Home
+                           <Link className="link" to="/">
+                               Home
+                            </Link> 
                         </li>
                         <li className="topListItem">
-                            About
+                            <Link className="link" to="/">
+                                About
+                            </Link>
                         </li>
                         <li className="topListItem">
                             Contact
                         </li>
                         <li className="topListItem">
-                            Write
+                            <Link className="link" to="/write">
+                                Write
+                            </Link>  
                         </li>
+                        {
+                        user && 
                         <li className="topListItem">
                             Logout
-                        </li>
+                            </li>
+                        }
                 </ul>
             </div>
-
-            <div className="topLeft">
+        
+            <div className="topRight">
+        {user ? (
+          <Link className="link" to="/settings">
             <img
               className="topImg"
-              src="https://images.pexels.com/photos/2873473/pexels-photo-2873473.jpeg?cs=srgb&dl=pexels-david-bartus-2873473.jpg&fm=jpg" 
-              alt="topimage"
+              src="https://images.pexels.com/photos/2873473/pexels-photo-2873473.jpeg?cs=srgb&dl=pexels-david-bartus-2873473.jpg&fm=jpg"
+              alt=""
             />
+          </Link>
+        ) : (
+          <ul className="topList">
+            <li className="topListItem">
+              <Link className="link" to="/login">
+                LOGIN
+              </Link>
+            </li>
+            <li className="topListItem">
+              <Link className="link" to="/register">
+                REGISTER
+              </Link>
+            </li>
+          </ul>
+        )}
+
             <i className="topSearchIcon fas fa-search"></i>
-            </div>
+        </div>
             
         </div>
     )
