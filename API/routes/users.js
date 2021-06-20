@@ -1,6 +1,7 @@
 const express = require("express");
 const userRouter = express.Router();
 const User = require("../model/User")
+const Post = require("../model/Post");
 const bcrypt = require('bcrypt');
 
 // Update user
