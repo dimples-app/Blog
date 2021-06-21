@@ -5,7 +5,7 @@ import "./Topbar.css";
 
 
 function Topbar() {
-    const user = false;
+    const user = true;
     return (
         <div className="top">
             <div className="topRight"> 

@@ -3,15 +3,14 @@ import "./Posts.css"
 import Post from '../Post/Post'
 
 
-function Posts() {
+function Posts(props) {
+    const {posts} = props;
     return (
         <div className="posts">
-            <Post />
-            <Post />
-            <Post />
-            <Post />
-            <Post />
-        </div>
+      {posts.map((post) => (
+        <Post post={post} />
+      ))}
+    </div>
     )
 }
 
