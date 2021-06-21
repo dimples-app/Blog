@@ -8,6 +8,7 @@
           # Additional library : multer
           
 ### Images
+![Home](https://github.com/dimples-app/Blog/blob/master/Assets/Home.jpg.png)
     
 ### Kandban Board
 (https://github.com/dimples-app/Blog/projects/1)
