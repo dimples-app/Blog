@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {Link} from "react-router-dom";
 import "./SideBar.css"
-import axios  from 'axios';
+import axios from 'axios';
 
 function SideBar() {
     const [cats, setCats] = useState([]);
