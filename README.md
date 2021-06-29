@@ -5,8 +5,13 @@
 ###  Description: 
 Full stack web application that allow users to register, login, create/ edit /delete post. Frontend with React backend with mongo/express
 
-### Tech: 
-MongoDB, Express, React and Node.  HTML, CSS
+### Tech Stack: 
+     - MongoDB, 
+     - Express, 
+     - React 
+     - Node.  
+     - HTML, 
+     - CSS
           # Additional library : multer
           
 ### Images
