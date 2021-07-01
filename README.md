@@ -16,7 +16,17 @@ Full stack web application that allow users to register, login, create/ edit /de
           
 ### Images
 
-![Home](https://github.com/dimples-app/Blog/blob/master/Assets/Home.jpg.png)
+#### Home
+
+![Home](https://github.com/dimples-app/Blog/blob/master/Assets/blog_home.png)
+
+#### Log In
+
+![Login](https://github.com/dimples-app/Blog/blob/master/Assets/Blog_log_in.png)
+
+#### Register
+
+![Register](https://github.com/dimples-app/Blog/blob/master/Assets/blog_Registration.png)
     
 ### Kandban Board
 
