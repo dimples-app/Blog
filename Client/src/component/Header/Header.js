@@ -5,8 +5,7 @@ function Header() {
     return (
         <div className="header">
             <div className="headerTitles">
-        <span className="headerTitleSm">Welcome to my blog</span>
-        <span className="headerTitleLg">BLOG</span>
+        <span className="headerTitleSm">Welcome to my BLOG</span>
       </div>
       <img
         className="headerImg"
