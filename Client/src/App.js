@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useContext} from "react";
 import "./App.css"
 import Topbar from "./component/TopBar/Topbar";
 import Header from "./component/Header/Header"
@@ -9,44 +9,29 @@ import Write from "./pages/Write";
 import Settings from "./pages/Settings";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import { Context } from "./context/Context";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 
 function App() {
-  const user = false;
-  return <>
-    
+  const {user} = useContext(Context);
+  return (
     <Router>
-    <Topbar />
+      <Topbar />
       <Switch>
-        <Route exact={true} path="/">
+        <Route exact path="/">
           <Home />
         </Route>
-
-        <Route path="/register">
-          {user ? <Home /> : <Register />}
-        </Route>
-
-        <Route path="/login">
-          {user ? <Home /> : <Login />}
-        </Route>
-
-        <Route path="/write">
-          {user ? <Write /> : <Register /> }
-        </Route>
-
-        <Route path="/settings">
-          {user ? <Settings /> : <Register />}
-        </Route>
-
+        <Route path="/register">{user ? <Home /> : <Register />}</Route>
+        <Route path="/login">{user ? <Home /> : <Login />}</Route>
+        <Route path="/write">{user ? <Write /> : <Register />}</Route>
+        <Route path="/settings">{user ? <Settings /> : <Register />}</Route>
         <Route path="/post/:postId">
           <SinglePage />
         </Route>
-
       </Switch>
     </Router>
-
-  </>;
+  )
 }
 
 export default App;
