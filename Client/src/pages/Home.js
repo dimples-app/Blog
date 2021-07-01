@@ -7,14 +7,14 @@ import axios from "axios"
 import { useLocation } from "react-router";
 
 function Home() {
-
+     
     const [posts, setPosts] = useState([]);
     const { search } = useLocation();
     
     useEffect(() => {
         const fetchPosts = async () => {
-          const res = await axios.get("/posts" + search);
-          setPosts(res.data);
+          const response = await axios.get("/posts" + search);
+          setPosts(response.data);   
         };
         fetchPosts();
       }, [search]);
@@ -23,8 +23,7 @@ function Home() {
         <Header  />
         <div className="home">
             <Posts posts={posts} />
-            <SideBar />
-                
+            <SideBar />   
         </div>
         </>
     )
