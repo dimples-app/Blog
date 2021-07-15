@@ -33,9 +33,11 @@ function SideBar() {
                 <span className="sidebarTitle">CATEGORIES</span>
                 <ul className="sidebarList">
           {cats.map((category) => (
+            <div key={category.id}>
             <Link to={`/?cat=${category.name}`} className="link">
             <li className="sidebarListItem">{category.name}</li>
             </Link>
+            </div>
           ))}
         </ul>
             </div>
@@ -49,8 +51,6 @@ function SideBar() {
                 <i className="sidebarIcon fab fa-twitter-square"></i>
                 </div>
             </div>
-            
-            
         </div>
     )
 }

@@ -16,7 +16,9 @@ function Post(props) {
         <div className="postInfo">
         <div className="postCats">
           {post.categories.map((c) => (
+            <div key={c.id}>
             <span className="postCat">{c.name}</span>
+            </div>
           ))}
         </div>
         <Link to={`/post/${post._id}`} className="link">

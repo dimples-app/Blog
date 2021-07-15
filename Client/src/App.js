@@ -1,8 +1,6 @@
 import React, {useContext} from "react";
 import "./App.css"
 import Topbar from "./component/TopBar/Topbar";
-import Header from "./component/Header/Header"
-import SideBar from "./component/SideBar/SideBar";
 import Home from  "./pages/Home"
 import SinglePage from "./pages/SinglePage";
 import Write from "./pages/Write";
@@ -14,7 +12,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 
 function App() {
-  const {user} = useContext(Context);
+  const {user = true} = useContext(Context);
   return (
     <Router>
       <Topbar />

@@ -8,7 +8,9 @@ function Posts(props) {
     return (
         <div className="posts">
       {posts.map((post) => (
+        <div key={post.id}>
         <Post post={post} />
+        </div>
       ))}
     </div>
     )

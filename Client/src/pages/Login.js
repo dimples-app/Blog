@@ -8,7 +8,7 @@ import { Context } from '../context/Context.js';
 import "../App.js"
 
 function Login() {
-    const user = true;
+    
     const userRef = useRef();
     const passwordRef = useRef();
     const { dispatch, isFetching } = useContext(Context);
@@ -30,7 +30,7 @@ function Login() {
     return (
       <div className="login">
         <span className="loginTitle">Login</span>
-        <form className="loginForm" onSubmit={() => handleSubmit}>
+        <form className="loginForm" onSubmit={handleSubmit}>
           <label>Username</label>
           <input
             type="text"
